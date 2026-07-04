@@ -132,7 +132,6 @@ architecture/ETL_Flow.png
 | SQL Engine | Databricks SQL Warehouse |
 | Dashboard | Microsoft Fabric |
 | Reporting | Power BI |
-| Streaming | Azure Event Hub |
 | Version Control | Git |
 | CI/CD | Azure DevOps |
 | Testing | PyTest |
