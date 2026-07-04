@@ -554,4 +554,3 @@ Azure Data Engineer Project
 
 ---
 
-# ⭐ If you found this project useful, please give it a Star.
