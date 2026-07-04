@@ -549,7 +549,7 @@ Credit-Risk-Assessment-Pipeline
 
 # 👨‍💻 Author
 
-**Srujith Naidu**
+**Srujith Kandala**
 
 Azure Data Engineer Project
 
