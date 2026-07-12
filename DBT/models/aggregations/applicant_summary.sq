@@ -1,0 +1,15 @@
+{{ config(
+    materialized='table'
+) }}
+
+SELECT
+
+    region,
+
+    COUNT(DISTINCT applicant_id) AS total_applicants,
+
+    AVG(income) AS average_income
+
+FROM {{ source('silver','silver_applicant_profiles') }}
+
+GROUP BY region

@@ -1,0 +1,13 @@
+SELECT
+
+applicant_id,
+
+COUNT(*)
+
+FROM {{ ref('dim_applicant') }}
+
+WHERE is_current = TRUE
+
+GROUP BY applicant_id
+
+HAVING COUNT(*) > 1

@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: silver
+    database: credit_risk_analysis_db
+    schema: silver_sch
+
+    tables:
+      - name: silver_applicant_profiles
+      - name: silver_credit_application
+      - name: silver_credit_history
+      - name: silver_loan_details
+      - name: silver_economic_indicators

@@ -1,0 +1,65 @@
+version: 2
+
+models:
+
+  - name: dim_applicant
+    description: Applicant Dimension
+
+    columns:
+      - name: applicant_id
+        description: Business key of applicant
+        tests:
+          - unique
+          - not_null
+
+      - name: applicant_sk
+        description: Surrogate key
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_loan
+    description: Loan Dimension
+
+    columns:
+      - name: loan_type
+        description: Type of loan
+
+      - name: loan_purpose
+        description: Purpose of the loan
+
+  - name: dim_region
+    description: Region Dimension
+
+    columns:
+      - name: region
+        description: Applicant region
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_credit_application
+    description: Credit Application Fact Table
+
+    columns:
+      - name: applicant_id
+        description: Applicant reference
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_applicant')
+              field: applicant_id
+
+      - name: loan_amount
+        description: Loan Amount
+        tests:
+          - not_null
+
+  - name: customer_kpi
+    description: Customer KPI Model
+
+  - name: loan_kpi
+    description: Loan KPI Model
+
+  - name: executive_dashboard
+    description: Executive Dashboard
