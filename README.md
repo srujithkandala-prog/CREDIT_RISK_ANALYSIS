@@ -512,28 +512,6 @@ Major Reports
 - Business Rule Validation
 
 ---
-
-# 📂 Repository Structure
-
-```
-Credit-Risk-Assessment-Pipeline
-│
-├── architecture
-├── datasets
-├── adf
-├── databricks
-├── sql
-├── data_model
-├── dashboards
-├── streaming
-├── tests
-├── docs
-├── screenshots
-└── README.md
-```
-
----
-
 # 🚀 Future Enhancements
 
 - Real-Time Fraud Detection
